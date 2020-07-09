@@ -15,7 +15,6 @@ public class TwoCharacters {
 
         for (int i = 0; i < characterList.size() - 1; i++) {
             for (int j = i + 1; j < characterList.size(); j++) {
-//                System.out.println(characterList.get(i) + " - " + characterList.get(j));
                 char c1 = characterList.get(i);
                 char c2 = characterList.get(j);
                 String testString = getTwoCharactersString(s, c1, c2);
