@@ -7,6 +7,8 @@ public class TwoCharacters {
 
     public static void main(String[] args) {
         System.out.println(alternate("beabeefeab") == 5);
+        System.out.println(alternate("asdcbsdcagfsdbgdfanfghbsfdab") == 8);
+        System.out.println(alternate("asvkugfiugsalddlasguifgukvsa") == 0);
     }
 
     static int alternate(String s) {
@@ -26,7 +28,6 @@ public class TwoCharacters {
                 }
             }
         }
-
         return maxLength;
     }
 
