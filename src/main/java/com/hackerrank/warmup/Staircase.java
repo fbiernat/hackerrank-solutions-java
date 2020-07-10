@@ -1,4 +1,4 @@
-package com.hackerrank.problemsolving.warmup;
+package com.hackerrank.warmup;
 
 public class Staircase {
 
