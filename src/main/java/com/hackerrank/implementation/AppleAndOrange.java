@@ -14,8 +14,8 @@ public class AppleAndOrange {
      * @param t       ending position of house
      * @param a       position of apple tree
      * @param b       position of orange tree
-     * @param apples  list of distances from the tree of fallen apples
-     * @param oranges list of distances from the tree of fallen oranges
+     * @param apples  list of distances of fallen apples from the tree
+     * @param oranges list of distances of fallen oranges from the tree
      */
     static void countApplesAndOranges(int s, int t, int a, int b, int[] apples, int[] oranges) {
         // apples
@@ -32,7 +32,7 @@ public class AppleAndOrange {
         System.out.println(appleCounter);
         // oranges
         for (int i = 0; i < oranges.length; i++) {
-            // add distance from the apple tree
+            // add distance from the orange tree
             oranges[i] += b;
         }
         int orangeCounter = 0;
