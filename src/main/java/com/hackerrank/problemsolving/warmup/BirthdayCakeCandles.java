@@ -9,7 +9,7 @@ public class BirthdayCakeCandles {
     }
 
     static int birthdayCakeCandles(int[] ar) {
-        int max = 0;
+        int max;
         int numberOfCandles = 0;
 
         Arrays.sort(ar);

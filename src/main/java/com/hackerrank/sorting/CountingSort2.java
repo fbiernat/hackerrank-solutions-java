@@ -15,7 +15,7 @@ public class CountingSort2 {
     }
 
     static int[] countingSort(int[] arr) {
-        int max = 0;
+        int max = Integer.MIN_VALUE;
         for (int item : arr) {
             if (item > max) {
                 max = item;

@@ -32,7 +32,7 @@ public class FullCountingSort {
     }
 
     static void countSort(List<List<String>> arr) {
-        int max = 0;
+        int max = Integer.MIN_VALUE;
         int count = 0;
         for (List<String> l : arr) {
             count++;
