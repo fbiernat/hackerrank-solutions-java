@@ -13,6 +13,17 @@ public class BirthdayChocolate {
         System.out.println(birthday(Arrays.asList(2, 5, 1, 3, 4, 4, 3, 5, 1, 1, 2, 1, 4, 1, 3, 3, 4, 2, 1), 18, 7));
     }
 
+    /**
+     * Complete the birthday function in the editor below. It should return an integer denoting the number of ways
+     * Lily can divide the chocolate bar.
+     * <p>
+     * birthday has the following parameter(s):
+     *
+     * @param s an array of integers, the numbers on each of the squares of chocolate
+     * @param d an integer, Ron's birth day
+     * @param m an integer, Ron's birth month
+     * @return an integer denoting the number of ways Lily can divide the chocolate bar
+     */
     static int birthday(List<Integer> s, int d, int m) {
         int numberOfWays = 0;
 

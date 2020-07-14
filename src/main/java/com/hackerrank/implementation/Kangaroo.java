@@ -7,6 +7,18 @@ public class Kangaroo {
         System.out.println(kangaroo(0, 2, 5, 3));
     }
 
+    /**
+     * Complete the function kangaroo in the editor below. It should return YES if they reach the same position at
+     * the same time, or NO if they don't.
+     * <p>
+     * kangaroo has the following parameter(s):
+     *
+     * @param x1 integer, starting position for kangaroo 1
+     * @param v1 integer, jump distance for kangaroo 1
+     * @param x2 integer, starting position for kangaroo 2
+     * @param v2 integer, jump distance for kangaroo 2
+     * @return String, "YES" if kangaroos reached the same position in the same time otherwise return "NO"
+     */
     static String kangaroo(int x1, int v1, int x2, int v2) {
 
         KangarooSpecimen kangaroo1 = new KangarooSpecimen(x1, v1);

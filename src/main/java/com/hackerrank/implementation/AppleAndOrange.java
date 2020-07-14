@@ -8,14 +8,17 @@ public class AppleAndOrange {
     }
 
     /**
-     * Count amount of apples and oranges that fall on the house
+     * Complete the countApplesAndOranges function in the editor below. It should print the number of apples and
+     * oranges that land on Sam's house, each on a separate line.
+     * <p>
+     * countApplesAndOranges has the following parameter(s):
      *
-     * @param s       starting position of house
-     * @param t       ending position of house
-     * @param a       position of apple tree
-     * @param b       position of orange tree
-     * @param apples  list of distances of fallen apples from the tree
-     * @param oranges list of distances of fallen oranges from the tree
+     * @param s       integer, starting point of Sam's house location.
+     * @param t       integer, ending location of Sam's house location.
+     * @param a       integer, location of the Apple tree.
+     * @param b       integer, location of the Orange tree.
+     * @param apples  integer array, distances at which each apple falls from the tree.
+     * @param oranges integer array, distances at which each orange falls from the tree.
      */
     static void countApplesAndOranges(int s, int t, int a, int b, int[] apples, int[] oranges) {
         // apples

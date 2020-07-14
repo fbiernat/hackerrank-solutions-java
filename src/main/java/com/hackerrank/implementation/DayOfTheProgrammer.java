@@ -11,6 +11,15 @@ public class DayOfTheProgrammer {
 
     static int[] daysInMonth = new int[]{31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
+    /**
+     * Complete the dayOfProgrammer function in the editor below. It should return a string representing the date of
+     * the 256th day of the year given.
+     * <p>
+     * dayOfProgrammer has the following parameter(s):
+     *
+     * @param year an integer
+     * @return string representing date of the day of the programmer in given year
+     */
     static String dayOfProgrammer(int year) {
         boolean isTransitionYear = false;
         int day = 0;

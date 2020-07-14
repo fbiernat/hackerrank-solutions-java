@@ -11,6 +11,15 @@ public class MigratoryBirds {
         System.out.println(migratoryBirds(Arrays.asList(1, 4, 4, 4, 5, 5, 5, 3, 3, 3)));
     }
 
+    /**
+     * Complete the migratoryBirds function in the editor below. It should return the lowest type number of the most
+     * frequently sighted bird.
+     * <p>
+     * migratoryBirds has the following parameter(s):
+     *
+     * @param arr an array of integers representing types of birds sighted
+     * @return lowest type number of the most frequently sighted bird
+     */
     static int migratoryBirds(List<Integer> arr) {
         Map<Integer, Integer> birdMap = new TreeMap<>();
         for (int bird : arr) {

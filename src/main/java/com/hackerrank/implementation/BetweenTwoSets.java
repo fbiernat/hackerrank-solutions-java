@@ -9,12 +9,24 @@ public class BetweenTwoSets {
         System.out.println(getTotalX(Arrays.asList(2, 4), Arrays.asList(16, 32, 96)));
     }
 
+    /**
+     * Complete the getTotalX function in the editor below. It should return the number of integers that are betwen
+     * the sets.
+     * <p>
+     * getTotalX has the following parameter(s):
+     *
+     * @param a an array of integers
+     * @param b an array of integers
+     * @return integer, the number of integers that are betwen the sets.
+     */
     public static int getTotalX(List<Integer> a, List<Integer> b) {
         int f = lcm(a);
         int l = gcd(b);
         int count = 0;
-        for (int i = f, j = 2; i <=l; i=f*j, j++) {
-            if(l%i==0){ count++;}
+        for (int i = f, j = 2; i <= l; i = f * j, j++) {
+            if (l % i == 0) {
+                count++;
+            }
         }
         return count;
     }
