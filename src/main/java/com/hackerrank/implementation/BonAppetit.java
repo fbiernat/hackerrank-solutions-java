@@ -22,7 +22,7 @@ public class BonAppetit {
      */
     static void bonAppetit(List<Integer> bill, int k, int b) {
         int sumOfAllItems = bill.stream().reduce(0, Integer::sum);
-        int annaBill = (bill.stream().reduce(0, Integer::sum) - bill.get(k)) / 2;
+        int annaBill = (sumOfAllItems - bill.get(k)) / 2;
 
         if (annaBill == b) {
             System.out.println("Bon Appetit");
