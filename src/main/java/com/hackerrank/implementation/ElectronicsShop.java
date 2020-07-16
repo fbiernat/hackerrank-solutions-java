@@ -2,6 +2,33 @@ package com.hackerrank.implementation;
 
 public class ElectronicsShop {
 
+    /**
+     * Complete the getMoneySpent function in the editor below. It should return the maximum total price for the two
+     * items within Monica's budget, or -1 if she cannot afford both items.
+     * <p>
+     * getMoneySpent has the following parameter(s):
+     *
+     * @param keyboards an array of integers representing keyboard prices
+     * @param drives    an array of integers representing drive prices
+     * @param b         the units of currency in Monica's budget
+     * @return maximum total price for the two items within Monica's budget, or -1 if she cannot afford both items
+     */
+    static int getMoneySpent(int[] keyboards, int[] drives, int b) {
+        int amount;
+        int max = Integer.MIN_VALUE;
+
+        for (int keyboard : keyboards) {
+            for (int drive : drives) {
+                amount = keyboard + drive;
+                if (amount <= b) {
+                    max = Math.max(max, amount);
+                }
+            }
+        }
+
+        return max == Integer.MIN_VALUE ? -1 : max;
+    }
+
     public static void main(String[] args) {
         System.out.println(getMoneySpent(new int[]{3, 1}, new int[]{5, 2, 8}, 10));
         System.out.println(getMoneySpent(new int[]{4}, new int[]{5}, 5));
@@ -146,33 +173,6 @@ public class ElectronicsShop {
                 155276, 103005, 181970, 334439, 861980, 75521, 946329, 753416, 373394, 272364, 270806, 897633, 644145
                 , 526698, 408827, 800931, 25393, 979152, 156188}, 374625));
 
-    }
-
-    /**
-     * Complete the getMoneySpent function in the editor below. It should return the maximum total price for the two
-     * items within Monica's budget, or -1 if she cannot afford both items.
-     * <p>
-     * getMoneySpent has the following parameter(s):
-     *
-     * @param keyboards an array of integers representing keyboard prices
-     * @param drives    an array of integers representing drive prices
-     * @param b         the units of currency in Monica's budget
-     * @return maximum total price for the two items within Monica's budget, or -1 if she cannot afford both items
-     */
-    static int getMoneySpent(int[] keyboards, int[] drives, int b) {
-        int amount;
-        int max = Integer.MIN_VALUE;
-
-        for (int keyboard : keyboards) {
-            for (int drive : drives) {
-                amount = keyboard + drive;
-                if (amount <= b) {
-                    max = Math.max(max, amount);
-                }
-            }
-        }
-
-        return max == Integer.MIN_VALUE ? -1 : max;
     }
 
 }
