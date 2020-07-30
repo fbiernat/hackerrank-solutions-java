@@ -10,5 +10,5 @@ public class FunnyStringTest {
         Assert.assertEquals("Funny", FunnyString.funnyString("acxz"));
         Assert.assertEquals("Not Funny", FunnyString.funnyString("bcxz"));
     }
-    
+
 }
