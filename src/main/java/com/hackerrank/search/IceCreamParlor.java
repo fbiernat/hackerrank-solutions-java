@@ -51,5 +51,5 @@ public class IceCreamParlor {
         System.out.println(Arrays.toString(icecreamParlor(8, new int[]{1, 3, 4, 4, 6, 8})));    // 3 4
         System.out.println(Arrays.toString(icecreamParlor(3, new int[]{1, 2})));                // 1 2
     }
-    
+
 }
