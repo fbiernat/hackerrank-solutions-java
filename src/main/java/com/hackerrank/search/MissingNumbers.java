@@ -63,7 +63,7 @@ public class MissingNumbers {
 
         // Remove duplicates
         List<Integer> missingNumbersList = new ArrayList<>();
-        int prevItem = -1;
+        int prevItem = Integer.MIN_VALUE;
         for (int number : fullList) {
             if (number != prevItem) {
                 missingNumbersList.add(number);
