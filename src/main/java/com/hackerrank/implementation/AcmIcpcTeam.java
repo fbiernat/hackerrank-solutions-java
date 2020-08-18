@@ -36,7 +36,7 @@ public class AcmIcpcTeam {
             for (int j = i + 1; j < topic.length; j++) {
                 String member1 = topic[i];
                 String member2 = topic[j];
-                int knownTopics = getKnownTopicsByTeam(member1, member2);
+                int knownTopics = getTeamKnownTopics(member1, member2);
                 // Populate map of topics known by teams
                 teamsMap.put(teamId++, knownTopics);
                 // Find maximum of topics that can be known by a team
@@ -53,7 +53,7 @@ public class AcmIcpcTeam {
         return new int[]{maxTopics, sumOfTeamsWithMaxTopics};
     }
 
-    private static int getKnownTopicsByTeam(String member1, String member2) {
+    private static int getTeamKnownTopics(String member1, String member2) {
         if (member1.length() != member2.length()) {
             return -1;
         }
