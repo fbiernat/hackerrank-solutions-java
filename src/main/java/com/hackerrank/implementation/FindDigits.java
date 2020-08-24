@@ -20,7 +20,7 @@ public class FindDigits {
      * findDigits has the following parameter(s):
      *
      * @param n an integer to analyze
-     * @return an integer representing the number of digits of  that are divisors of d
+     * @return an integer representing the number of digits of d that are divisors of d
      */
     static int findDigits(int n) {
         int counter = 0;
