@@ -40,12 +40,12 @@ public class CavityMap {
         List<Integer[]> cavitiesCoordinates = new ArrayList<>();
         for (int i = 0; i < grid.length; i++) {
             for (int j = 0; j < grid[i].length(); j++) {
-                // cell is on the edge of the map
                 if (i == 0 || i == grid.length - 1 || j == 0 || j == grid[i].length() - 1) {
+                    // cell is on the edge of the map
                     continue;
                 }
-                // check if cell is a cavity
                 int cellValue = getCellValue(grid, i, j);
+                // check if cell is a cavity
                 if (getCellValue(grid, i - 1, j) < cellValue &&
                         getCellValue(grid, i, j - 1) < cellValue &&
                         getCellValue(grid, i, j + 1) < cellValue &&
